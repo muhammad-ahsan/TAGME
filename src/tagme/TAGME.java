@@ -4,7 +4,6 @@
  */
 // TAG.ME http://tagme.di.unipi.it/
 // Reference : http://tagme.di.unipi.it/tagme_help.html
-// Key : 4534ogfe7
 // Expiry Date : 31/12/2013
 package tagme;
 
@@ -31,7 +30,12 @@ public class TAGME {
     }
 
     public static void main(String[] args) throws IOException {
-        String Content = "The 1986 FIBA World Championship was an international basketball competition hosted by Spain from July 5 to 19 1986. The Final phase of the tournament was held at the Palacio de Deportes de la Comunidad, Madrid.[1] They were classified as the official men's basketball event of the 1986 Goodwill Games, held simultaneously in Moscow.";
+        String Content = "The 1986 FIBA World Championship was an international "
+                + "basketball competition hosted by Spain from July 5 to 19 1986. "
+                + "The Final phase of the tournament was held at the Palacio de "
+                + "Deportes de la Comunidad, Madrid. They were classified as the"
+                + " official men's basketball event of the 1986 Goodwill Games, "
+                + "held simultaneously in Moscow.";
         String Q = getRESTQuery(Content);
         System.out.println(Q);
         // Example
